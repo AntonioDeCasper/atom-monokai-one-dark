@@ -1,8 +1,6 @@
 {
   "_location": "/atom_monokai_one_dark",
-  "dependencies": {
-    "language-babel": "2.84.0"
-  },
+  "dependencies": {},
   "description": "A monokai theme based at 'monokai' theme (by kevinsawicki)",
   "devDependencies": {},
   "engines": {
