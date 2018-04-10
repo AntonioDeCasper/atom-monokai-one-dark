@@ -14,7 +14,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonioDeCasper/atom-monokai-one-dark"
+    "url": "https://github.com/AntonioDeCasper/atom-monokai-one-dark"
   },
   "theme": "syntax",
   "version": "0.1.0"
