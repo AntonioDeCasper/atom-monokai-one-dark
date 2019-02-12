@@ -1,3 +1,3 @@
 # Monokai One Dark theme (AntonioDeCasper)
 
-A monokai syntax theme for Atom based at 'monokai' theme (by kevinsawicki). Request package => language-babel (v. >=2.84.0)
+Syntax theme for Atom based at 'monokai' theme (by kevinsawicki). Created for react, react native projects. Dependences - language-babel >=2.85.0.

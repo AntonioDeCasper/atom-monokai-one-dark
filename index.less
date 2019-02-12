@@ -138,7 +138,7 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @pink !important;
+  color: @pink;
 }
 
 .syntax--meta.syntax--tag {
@@ -189,21 +189,21 @@ atom-text-editor {
 //BEGIN new JS syntax
 .syntax--js {
   .syntax--class {
-    color: #a6e22e;
+    color: @green;
   }
 
   .syntax--storage {
     color: @pink;
-    &.syntax--class,
-    &.syntax--extends {
-      font-style: italic;
-      color: @sea-sky-blue;
-    }
   }
 
   .syntax--method-call {
     .syntax--class{
-      color: #a6e22e;
+      color: @green;
+    }
+
+    .syntax--support {
+      color: @orange;
+      font-weight: bold;
     }
   }
 
@@ -211,26 +211,33 @@ atom-text-editor {
     &.syntax--console{
       color: @blue;
     }
-
-    .syntax--readwrite {
-      text-decoration: none;
-      color: @orange;
-    }
   }
 
   .syntax--readwrite {
-    color: #a6e22e;
-    text-decoration: underline;
+    color: @green;
+    font-style: italic;
   }
 
   .syntax--type + .syntax--variable {
-    text-decoration: none;
+    text-decoration: underline;
     color: @orange;
   }
 
   .syntax--type + .syntax--variable.syntax--constant {
     font-style: italic;
     font-weight: bold;
+  }
+
+  .syntax--parameters {
+    .syntax--variable {
+      color: @orange;
+    }
+  }
+
+  .syntax--function {
+    .syntax--variable {
+      color: @orange;
+    }
   }
 
   .syntax--template {
@@ -248,11 +255,18 @@ atom-text-editor {
       }
     }
   }
+
   .syntax--variable {
     &.syntax--property{
       color: @blue;
     }
   }
+
+  .syntax--module + .syntax--variable {
+    text-decoration: underline;
+    font-style: normal;
+  }
+
   .syntax--import {
     .syntax--module{
       color: @sea-sky-blue;
@@ -304,6 +318,14 @@ atom-text-editor {
       font-style: italic;
     }
 
+    &.syntax--punctuation {
+      color: @flowtype-color;
+    }
+
+    &.syntax--operator {
+      color: @flowtype-color;
+    }
+
     &.syntax--object {
       font-style: normal;
 
@@ -347,6 +369,25 @@ atom-text-editor {
   }
 }
 //END syntax JSON
+
+//BEGIN syntax CSS
+.syntax--css {
+  .syntax--property-name {
+    color: @blue;
+  }
+
+  .syntax--property-value {
+    color: @purple;
+  }
+
+  .syntax--selector {
+    .syntax--pseudo-class,
+    .syntax--pseudo-element{
+      color: #fff;
+    }
+  }
+}
+//END syntax CSS
 
 .item-views{
   .terminal-pane {

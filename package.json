@@ -1,13 +1,19 @@
 {
   "_location": "/atom_monokai_one_dark",
-  "dependencies": {},
-  "description": "A monokai theme based at 'monokai' theme (by kevinsawicki)",
+  "bugs": {
+    "url": "https://github.com/AntonioDeCasper/atom-monokai-one-dark/issues"
+  },
+  "description": "A Monokai code styling theme",
   "devDependencies": {},
+  "deprecated": false,
   "engines": {
     "atom": ">=1.13.0"
   },
   "homepage": "https://github.com/AntonioDeCasper/atom-monokai-one-dark#readme",
   "name": "atom-monokai-one-dark",
+  "package-deps": [
+    "language-babel"
+  ],
   "optionalDependencies": {},
   "private": true,
   "readme": "# Monokai One Dark theme (AntonioDeCasper)\n\nA monokai syntax theme for Atom.",
